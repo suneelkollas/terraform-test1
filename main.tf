@@ -10,7 +10,7 @@ availability_zone = "ap-south-1a"
 user_data	= <<EOF
 #!/bin/bash
 sudo -i
-yim install httpd -y
+yum install httpd -y
 systemctl start httpd
 chkconfig httpd on
 echo "Hi this is my means suneel website" > /var/www/html/index.html
@@ -29,7 +29,7 @@ availability_zone = "ap-south-1b"
 user_data       = <<EOF
 #!/bin/bash
 sudo -i
-yim install httpd -y
+yum install httpd -y
 systemctl start httpd
 chkconfig httpd on
 echo "Hi this is my means suneel website" > /var/www/html/index.html
